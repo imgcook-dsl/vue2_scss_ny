@@ -5,6 +5,7 @@
       :data-url="item.url"
       :key="item.index"
       v-for="(item, index) in data"
+      :key="index"
     >
       <div class="bd">
         <img
