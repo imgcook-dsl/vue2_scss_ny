@@ -468,7 +468,7 @@ module.exports = function (schema, option) {
               ${lifeCycles.join(',\n')}
             }
           </script>
-          <style lang="scss" src="./index.scss" />
+          <style scoped lang="scss" src="./index.scss" />
         `,
           prettierOpt
         ),
