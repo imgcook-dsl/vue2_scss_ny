@@ -452,7 +452,7 @@ module.exports = function (schema, option) {
         panelValue: prettier.format(
           `
           <template>
-              ${template}
+              ${template.join('\n')}
           </template>
           <script>
             ${imports.join('\n')}
@@ -467,8 +467,8 @@ module.exports = function (schema, option) {
               },
               ${lifeCycles.join(',\n')}
             }
-          </script>s
-          <style src="./index.response.scss" />
+          </script>
+          <style src="./index.scss" />
         `,
           prettierOpt
         ),

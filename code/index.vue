@@ -3,9 +3,8 @@
     <div
       @click="onClick_1"
       :data-url="item.url"
-      :key="item.index"
       v-for="(item, index) in data"
-      :key="index"
+      :key="item.index"
     >
       <div class="bd">
         <img
@@ -44,38 +43,38 @@
   </div>
 </template>
 <script>
-import { fetch } from 'whatwg-fetch';
-import jsonp from 'fetch-jsonp';
+import { fetch } from "whatwg-fetch";
+import jsonp from "fetch-jsonp";
 export default {
   data() {
     return {
       data: [
         {
-          title: '小户型卫浴怎样才能装得高大上？',
+          title: "小户型卫浴怎样才能装得高大上？",
           coverImage:
-            'https://img.alicdn.com/tfs/TB1Txq6o7T2gK0jSZFkXXcIQFXa-684-684.png',
+            "https://img.alicdn.com/tfs/TB1Txq6o7T2gK0jSZFkXXcIQFXa-684-684.png",
           readCount: 200,
           user: {
             userImage:
-              'https://img.alicdn.com/tfs/TB1DWe6oYj1gK0jSZFOXXc7GpXa-60-60.png',
-            userName: '时尚家居'
+              "https://img.alicdn.com/tfs/TB1DWe6oYj1gK0jSZFOXXc7GpXa-60-60.png",
+            userName: "时尚家居",
           },
-          url: 'https://www.imgcook.com'
+          url: "https://www.imgcook.com",
         },
         {
-          title: '拥有超多功能的40平米简约小公寓了解一下',
+          title: "拥有超多功能的40平米简约小公寓了解一下",
           coverImage:
-            'https://img.alicdn.com/tfs/TB1XRQTo7P2gK0jSZPxXXacQpXa-684-648.png',
+            "https://img.alicdn.com/tfs/TB1XRQTo7P2gK0jSZPxXXacQpXa-684-648.png",
           readCount: 500,
           user: {
             userImage:
-              'https://img.alicdn.com/tfs/TB1DWe6oYj1gK0jSZFOXXc7GpXa-60-60.png',
-            userName: '花花设计工作'
+              "https://img.alicdn.com/tfs/TB1DWe6oYj1gK0jSZFOXXc7GpXa-60-60.png",
+            userName: "花花设计工作",
           },
-          url: 'https://www.imgcook.com/docs'
-        }
+          url: "https://www.imgcook.com/docs",
+        },
       ],
-      constants: {}
+      constants: {},
     };
   },
   methods: {
@@ -83,44 +82,43 @@ export default {
       return readCount > 300;
     },
     fetch_example() {
-      fetch('https://jsonplaceholder.typicode.com/todos/1', {
-        method: 'GET',
-        headers: '{"Content-Type":"json"}'
+      fetch("https://jsonplaceholder.typicode.com/todos/1", {
+        method: "GET",
+        headers: '{"Content-Type":"json"}',
       })
-        .then(response => response.json())
+        .then((response) => response.json())
         .then((data, error) => {
-          console.log('fetch example: ', data, error);
+          console.log("fetch example: ", data, error);
           return data;
         })
-        .catch(e => {
-          console.log('error', e);
+        .catch((e) => {
+          console.log("error", e);
         });
     },
     jsonp_example() {
-      jsonp('https://assets.airbnb.com/frontend/search_results.js', {
-        jsonpCallbackFunction: 'search_results',
-        body: {}
+      jsonp("https://assets.airbnb.com/frontend/search_results.js", {
+        jsonpCallbackFunction: "search_results",
+        body: {},
       })
-        .then(response => response.json())
+        .then((response) => response.json())
         .then((data, error) => {
-          console.log('jsonp example: ', data, error);
+          console.log("jsonp example: ", data, error);
           return data;
         })
-        .catch(e => {
-          console.log('error', e);
+        .catch((e) => {
+          console.log("error", e);
         });
     },
     onClick_1(e) {
-      window.open(this.item.url, '_blank');
-    }
+      window.open(this.item.url, "_blank");
+    },
   },
   created() {
-    console.log('super props');
+    console.log("super props");
     this.fetch_example();
     this.jsonp_example();
   },
-  updated() {}
+  updated() {},
 };
 </script>
-s
-<style src="./index.response.scss" />
+<style src="./index.scss" />
