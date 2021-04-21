@@ -39,10 +39,10 @@
 export default {
   data() {
     return {
-      constants: {},
+      constants: {}
     };
   },
-  methods: {},
+  methods: {}
 };
 </script>
 <style lang="scss" src="./index.scss" />

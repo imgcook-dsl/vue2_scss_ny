@@ -278,6 +278,16 @@ module.exports = function (schema, option) {
 
     return render;
   };
+  //过滤掉某些样式
+  const filterStyles = (aim = {}, arr = []) => {
+    var temObj = {};
+    for (let i in aim) {
+      if (!arr.includes(i)) {
+        temObj[i] = aim[i];
+      }
+    }
+    return temObj;
+  }
 
   // generate render xml
   const generateRender = (schema) => {
@@ -296,6 +306,7 @@ module.exports = function (schema, option) {
       case 'text':
         const innerText = parseProps(schema.props.text, true);
         xml = `<span${classString}${props}>${innerText}</span> `;
+        //filter height/overflow/line-height
         styles = `.${className}{${parseStyle(schema.props.style)}}`;
         break;
       case 'image':
@@ -338,8 +349,16 @@ module.exports = function (schema, option) {
     }
     let res = '';
     for (let i = 0; i < node.length; i++) {
+      const type = node[i].componentName.toLowerCase();
       let className = (node[i].props && node[i].props.className) || 'content';
-      res += `.${className}{${parseStyle(node[i].props.style)};\n${transfromScss(node[i].children)}}\n`;
+      let a = {};
+      if (type === 'text') {
+        //优化样式兼容
+        a = filterStyles(node[i].props.style, ['height', 'overflow', 'lineHeight']);
+      } else {
+        a = node[i].props.style;
+      }
+      res += `.${className}{${parseStyle(a)};\n${transfromScss(node[i].children)}}\n`;
     }
     return res;
   }
@@ -353,7 +372,7 @@ module.exports = function (schema, option) {
       });
     } else {
       const type = schema.componentName.toLowerCase();
-      console.log(type);
+      //  console.log(type);
       if (['page', 'block', 'component'].indexOf(type) !== -1) {
         // 容器组件处理: state/method/dataSource/lifeCycle/render
         const init = [];
@@ -418,7 +437,7 @@ module.exports = function (schema, option) {
 
   // start parse schema
   var temString = transform(schema);
-  console.log(temString);
+  // console.log(temString);
   datas.push(`constants: ${toString(constants)}`);
 
   const prettierOpt = {
