@@ -1,438 +1,498 @@
 module.exports = {
   "componentName": "Page",
-  "id": "Block_745855",
-  "rect": {
-    "x": 0,
-    "y": 0,
-    "width": 342,
-    "height": 534
-  },
-  "smart": {},
+  "id": "e4f96760-a247-11eb-bd7f-b38b65e80e0b",
   "props": {
     "style": {
       "display": "flex",
-      "flexDirection": "row",
-      "justifyContent": "space-around",
+      "position": "relative",
       "alignItems": "flex-start",
-      "height": "534px"
+      "flexDirection": "column",
+      "backgroundColor": "#ffffff",
+      "width": "750px"
     },
-    "className": "box"
+    "className": "page"
   },
+  "artboardImg": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/dc3942d0a24711ebb1b049fdd2f200ce.png",
+  "rect": {
+    "x": 0,
+    "y": 0,
+    "width": 750,
+    "height": 1334
+  },
+  "pluginVersion": "1.0.0",
+  "smart": {
+    "layerProtocol": {
+      "custom-layout": {
+        "type": "skip"
+      }
+    }
+  },
+  "name": "活动规则",
+  "reference": "psd",
+  "restore_id": "f5d91050-bebf-435e-b835-2874364e08cd",
   "children": [{
-    "componentName": "Div",
+    "componentName": "Block",
+    "id": "ed968890-1f19-4acd-a890-732d1fa9722e",
     "props": {
-      "onClick": function onClick(e) {
-        window.open(this.item.url, '_blank')
+      "style": {
+        "display": "flex",
+        "position": "relative",
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center"
       },
-      "data-url": "{{this.item.url}}",
-      "key": "{{this.item.index}}"
+      "className": "card"
+    },
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 750,
+      "height": 1334
     },
     "children": [{
-      "componentName": "Div",
-      "id": "Block_644975",
+      "componentName": "Image",
+      "id": "e4f9b580-a247-11eb-bd7f-b38b65e80e0b",
+      "props": {
+        "style": {
+          "width": "750px",
+          "height": "1334px"
+        },
+        "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/ded8f3f0a24711eb89454d8e2ff70ae6.png",
+        "className": "long-banner"
+      },
       "rect": {
         "x": 0,
         "y": 0,
-        "width": 342,
-        "height": 342
+        "width": 750,
+        "height": 1334
       },
-      "smart": {},
+      "classNames": [{
+        "name": "活动规则",
+        "id": "478_20"
+      }],
+      "selfId": "layerId-2"
+    }],
+    "smart": {
+      "layerProtocol": {
+        "module": {
+          "type": "smartModule",
+          "params": {
+            "moduleName": "card"
+          }
+        }
+      }
+    }
+  }, {
+    "componentName": "Block",
+    "id": "60262c4e-87bb-4c92-a4fb-8b70f66f5b44",
+    "props": {
+      "style": {
+        "display": "flex",
+        "position": "absolute",
+        "bottom": "48px",
+        "alignItems": "flex-start",
+        "alignSelf": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "backgroundColor": "#ffffff",
+        "width": "659px",
+        "height": "1237px",
+        "overflow": "hidden"
+      },
+      "className": "card-1"
+    },
+    "rect": {
+      "x": 46,
+      "y": 49,
+      "width": 659,
+      "height": 1237
+    },
+    "classNames": [{
+      "name": "活动规则",
+      "id": "478_20"
+    }, {
+      "name": "UIBG",
+      "id": "478_7"
+    }],
+    "selfId": "layerId-4",
+    "fileName": "mod_0",
+    "children": [{
+      "componentName": "Div",
+      "id": "bb01927d-705b-4a86-bef8-75829f98c66c",
+      "props": {
+        "style": {
+          "display": "flex",
+          "position": "absolute",
+          "bottom": "12px",
+          "left": "0px",
+          "alignItems": "flex-start",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "backgroundSize": "contain",
+          "backgroundImage": "url(https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/df34cf90a24711ebb40d83c5f8e78746.png)",
+          "width": "659px",
+          "height": "138px"
+        },
+        "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/df34cf90a24711ebb40d83c5f8e78746.png",
+        "className": "group"
+      },
+      "rect": {
+        "x": 46,
+        "y": 1136,
+        "width": 659,
+        "height": 138
+      },
+      "classNames": [{
+        "name": "活动规则",
+        "id": "478_20"
+      }, {
+        "name": "UIBG",
+        "id": "478_7"
+      }, {
+        "name": "Vector Smart Object",
+        "id": "478_5"
+      }],
+      "selfId": "layerId-5",
+      "children": [{
+        "componentName": "Div",
+        "id": "63c2b76e-27ba-4c85-b0d3-382ca3591c53",
+        "props": {
+          "style": {
+            "display": "flex",
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "marginTop": "45px",
+            "backgroundColor": "#ffffff",
+            "backgroundImage": "linear-gradient(to top, rgb(255,87,111), rgb(236,44,86))",
+            "width": "195px",
+            "height": "63px",
+            "overflow": "hidden"
+          },
+          "className": "view"
+        },
+        "rect": {
+          "x": 278,
+          "y": 1181,
+          "width": 195,
+          "height": 63
+        },
+        "classNames": [{
+          "name": "活动规则",
+          "id": "478_20"
+        }, {
+          "name": "按钮",
+          "id": "478_19"
+        }],
+        "selfId": "layerId-15",
+        "children": [{
+          "componentName": "Image",
+          "id": "e4f98e70-a247-11eb-bd7f-b38b65e80e0b",
+          "props": {
+            "style": {
+              "marginRight": "39px",
+              "width": "17px",
+              "height": "19px",
+              "overflow": "hidden"
+            },
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/df9e3fc0a24711ebb40d83c5f8e78746.png",
+            "className": "icon"
+          },
+          "rect": {
+            "x": 292,
+            "y": 1203,
+            "width": 17,
+            "height": 19
+          },
+          "classNames": [{
+            "name": "活动规则",
+            "id": "478_20"
+          }, {
+            "name": "按钮",
+            "id": "478_19"
+          }],
+          "selfId": "layerId-17",
+          "smart": {
+            "layerProtocol": {
+              "layout": {
+                "type": "layout",
+                "position": "left"
+              }
+            }
+          }
+        }, {
+          "componentName": "Text",
+          "id": "e4f96761-a247-11eb-bd7f-b38b65e80e0b",
+          "props": {
+            "style": {
+              "marginTop": "-1px",
+              "marginRight": "37px",
+              "textAlign": "center",
+              "textDecoration": "none",
+              "lineHeight": "30px",
+              "letterSpacing": "0.72916674613953px",
+              "whiteSpace": "nowrap",
+              "color": "#ffffff",
+              "fontSize": "30px"
+            },
+            "text": "好的",
+            "lines": 1,
+            "className": "title"
+          },
+          "rect": {
+            "x": 348,
+            "y": 1198,
+            "width": 57,
+            "height": 28
+          },
+          "classNames": [{
+            "name": "活动规则",
+            "id": "478_20"
+          }, {
+            "name": "按钮",
+            "id": "478_19"
+          }],
+          "selfId": "layerId-10_0",
+          "smart": {
+            "layerProtocol": {
+              "layout": {
+                "type": "layout",
+                "position": "middle"
+              }
+            }
+          }
+        }, {
+          "componentName": "Image",
+          "id": "e4f98e71-a247-11eb-bd7f-b38b65e80e0b",
+          "props": {
+            "style": {
+              "width": "17px",
+              "height": "19px",
+              "overflow": "hidden"
+            },
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/df6d44b0a24711ebb66177e028752ca6.png",
+            "className": "icon-1"
+          },
+          "rect": {
+            "x": 442,
+            "y": 1203,
+            "width": 17,
+            "height": 19
+          },
+          "classNames": [{
+            "name": "活动规则",
+            "id": "478_20"
+          }, {
+            "name": "按钮",
+            "id": "478_19"
+          }],
+          "selfId": "layerId-16",
+          "smart": {
+            "layerProtocol": {
+              "layout": {
+                "type": "layout",
+                "position": "right"
+              }
+            }
+          }
+        }]
+      }]
+    }, {
+      "componentName": "Div",
+      "id": "8aff22d6-1682-40d3-8947-4a4c4c5a12be",
       "props": {
         "style": {
           "display": "flex",
           "position": "relative",
-          "alignItems": "flex-start",
-          "flexDirection": "row",
-          "opacity": "1.00",
-          "width": "342px",
-          "height": "342px"
+          "alignItems": "center",
+          "flexDirection": "column",
+          "marginTop": "14px",
+          "backgroundColor": "#eb2b55",
+          "width": "632px",
+          "height": "1084px",
+          "overflow": "hidden",
+          "color": "#ffffff"
         },
-        "className": "bd"
+        "className": "primary"
       },
-      "children": [{
-        "componentName": "Image",
-        "id": "Image_7",
-        "rect": {
-          "x": 0,
-          "y": 0,
-          "width": 342,
-          "height": 342
-        },
-        "smart": {},
-        "props": {
-          "style": {
-            "position": "absolute",
-            "top": "0px",
-            "left": "0px",
-            "width": "342px",
-            "height": "342px",
-            "overflow": "hidden"
-          },
-          "src": "https://img.alicdn.com/tfs/TB1bLoWoYH1gK0jSZFwXXc7aXXa-684-684.png",
-          "className": "layer"
-        }
-      }, {
-        "componentName": "Image",
-        "id": "Image_8",
-        "rect": {
-          "x": 0,
-          "y": 0,
-          "width": 342,
-          "height": 342
-        },
-        "smart": {},
-        "props": {
-          "style": {
-            "position": "absolute",
-            "top": "0px",
-            "left": "0px",
-            "opacity": "1.00",
-            "width": "342px",
-            "height": "342px"
-          },
-          "className": "bg",
-          "src": "{{this.item.coverImage}}"
-        }
-      }, {
-        "componentName": "Div",
-        "id": "Shape_9",
-        "rect": {
-          "x": 18,
-          "y": 18,
-          "width": 122,
-          "height": 30
-        },
-        "smart": {},
-        "props": {
-          "style": {
-            "boxSizing": "border-box",
-            "display": "flex",
-            "position": "relative",
-            "alignItems": "center",
-            "flexDirection": "row",
-            "marginTop": "18px",
-            "marginLeft": "18px",
-            "borderRadius": "15px",
-            "backgroundColor": "rgba(0,0,0,0.40)",
-            "paddingRight": "9px",
-            "paddingLeft": "10px",
-            "height": "30px"
-          },
-          "className": "wrap"
-        },
-        "children": [{
-          "componentName": "Image",
-          "id": "Image_11",
-          "rect": {
-            "x": 28,
-            "y": 24,
-            "width": 14,
-            "height": 18
-          },
-          "smart": {},
-          "props": {
-            "style": {
-              "opacity": "1.00",
-              "width": "14px",
-              "height": "18px"
-            },
-            "src": "https://img.alicdn.com/tfs/TB1mtZRoVT7gK0jSZFpXXaTkpXa-28-36.png",
-            "className": "riverdinwei"
-          }
-        }, {
-          "componentName": "Text",
-          "id": "Text_10_0",
-          "rect": {
-            "x": 46,
-            "y": 22,
-            "width": 84,
-            "height": 22
-          },
-          "smart": {},
-          "props": {
-            "style": {
-              "marginLeft": "4px",
-              "height": "22px",
-              "fontWeight": 400,
-              "fontSize": "18px",
-              "color": "#ffffff",
-              "lineHeight": "22px",
-              "whiteSpace": "nowrap"
-            },
-            "text": "距离500m",
-            "className": "distance"
-          }
-        }]
-      }]
-    }, {
-      "componentName": "Div",
-      "id": "Shape_5",
       "rect": {
-        "x": 0,
-        "y": 342,
-        "width": 342,
-        "height": 114
+        "x": 60,
+        "y": 63,
+        "width": 632,
+        "height": 1084
       },
-      "smart": {},
-      "props": {
-        "style": {
-          "display": "flex",
-          "alignItems": "flex-start",
-          "flexDirection": "row",
-          "justifyContent": "center",
-          "backgroundColor": "#ffffff",
-          "width": "342px",
-          "height": "114px"
-        },
-        "className": "main"
-      },
+      "classNames": [{
+        "name": "活动规则",
+        "id": "478_20"
+      }, {
+        "name": "UIBG",
+        "id": "478_7"
+      }],
+      "selfId": "layerId-6",
       "children": [{
         "componentName": "Text",
-        "id": "Text_6_0",
-        "rect": {
-          "x": 18,
-          "y": 364,
-          "width": 300,
-          "height": 88
-        },
-        "smart": {},
+        "id": "e4f98e76-a247-11eb-bd7f-b38b65e80e0b",
         "props": {
           "style": {
-            "marginTop": "22px",
-            "width": "300px",
-            "height": "88px",
-            "fontWeight": 400,
-            "fontSize": "30px",
-            "color": "#333333",
-            "lineHeight": "44px",
+            "position": "relative",
+            "marginTop": "54px",
+            "maxWidth": "620px",
+            "height": "37px",
             "overflow": "hidden",
-            "textOverflow": "ellipsis"
+            "textAlign": "center",
+            "textDecoration": "none",
+            "textOverflow": "ellipsis",
+            "lineHeight": "38px",
+            "letterSpacing": "0px",
+            "whiteSpace": "nowrap",
+            "fontSize": "38px"
           },
-          "className": "title",
-          "text": "{{this.item.title}}"
-        }
-      }]
-    }, {
-      "componentName": "Div",
-      "id": "Shape_0",
-      "rect": {
-        "x": 0,
-        "y": 456,
-        "width": 342,
-        "height": 78
-      },
-      "smart": {},
-      "props": {
-        "style": {
-          "boxSizing": "border-box",
-          "display": "flex",
-          "alignItems": "center",
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "borderBottomLeftRadius": "12px",
-          "borderBottomRightRadius": "12px",
-          "backgroundColor": "#ffffff",
-          "paddingRight": "17px",
-          "paddingLeft": "18px",
-          "width": "342px",
-          "height": "78px",
-          "overflow": "hidden"
+          "text": "活动规则",
+          "lines": 1,
+          "className": "rule"
         },
-        "className": "ft"
-      },
-      "children": [{
-        "componentName": "Div",
-        "id": "Block_788015",
         "rect": {
-          "x": 18,
-          "y": 480,
-          "width": 132,
-          "height": 30
+          "x": 303,
+          "y": 117,
+          "width": 147,
+          "height": 37
         },
-        "smart": {},
-        "props": {
-          "style": {
-            "display": "flex",
-            "alignItems": "center",
-            "flexDirection": "row",
-            "height": "30px"
-          },
-          "className": "block"
-        },
-        "children": [{
-          "componentName": "Image",
-          "id": "Image_1",
-          "rect": {
-            "x": 18,
-            "y": 480,
-            "width": 30,
-            "height": 30
-          },
-          "smart": {},
-          "props": {
-            "style": {
-              "width": "30px",
-              "height": "30px"
-            },
-            "src": "https://img.alicdn.com/tfs/TB1OvsYoW61gK0jSZFlXXXDKFXa-60-60.png",
-            "className": "xianjin"
-          }
+        "classNames": [{
+          "name": "活动规则",
+          "id": "478_20"
         }, {
-          "componentName": "Text",
-          "id": "Text_2_0",
-          "rect": {
-            "x": 54,
-            "y": 481,
-            "width": 96,
-            "height": 28
-          },
-          "smart": {},
-          "props": {
-            "style": {
-              "marginLeft": "6px",
-              "height": "28px",
-              "fontWeight": 300,
-              "fontSize": "24px",
-              "color": "#666666",
-              "lineHeight": "28px",
-              "whiteSpace": "nowrap"
-            },
-            "className": "fashionHome",
-            "text": "{{this.item.user.userName}}"
-          }
-        }]
-      }, {
-        "componentName": "Div",
-        "id": "Block_615383",
-        "rect": {
-          "x": 261,
-          "y": 480,
-          "width": 63,
-          "height": 30
-        },
-        "smart": {},
-        "props": {
-          "style": {
-            "display": "flex",
-            "alignItems": "center",
-            "flexDirection": "row",
-            "height": "30px"
-          },
-          "className": "group"
-        },
-        "children": [{
-          "componentName": "Image",
-          "id": "Image_4",
-          "rect": {
-            "x": 261,
-            "y": 484,
-            "width": 22,
-            "height": 22
-          },
-          "smart": {},
-          "props": {
-            "style": {
-              "width": "22px",
-              "height": "22px"
-            },
-            "src": "https://img.alicdn.com/tfs/TB1arwYo7T2gK0jSZFkXXcIQFXa-46-44.png",
-            "className": "favorite"
-          }
-        }, {
-          "componentName": "Text",
-          "id": "Text_3_0",
-          "rect": {
-            "x": 288,
-            "y": 482,
-            "width": 36,
-            "height": 26
-          },
-          "smart": {},
-          "props": {
-            "style": {
-              "marginLeft": "5px",
-              "height": "26px",
-              "fontWeight": 400,
-              "fontSize": "22px",
-              "color": "#999999",
-              "lineHeight": "26px",
-              "whiteSpace": "nowrap"
-            },
-            "className": "num",
-            "text": "{{this.item.readCount}}"
-          }
+          "name": "标题",
+          "id": "478_10"
         }],
-        "condition": "{{this.isReadCountShow(this.item.readCount)}}"
+        "selfId": "layerId-5_0"
+      }, {
+        "componentName": "Text",
+        "id": "e4f98e75-a247-11eb-bd7f-b38b65e80e0b",
+        "props": {
+          "style": {
+            "WebkitBoxOrient": "vertical",
+            "display": "-webkit-inline-box",
+            "WebkitLineClamp": 7,
+            "position": "relative",
+            "marginTop": "38px",
+            "width": "559px",
+            "height": "203px",
+            "overflow": "hidden",
+            "textAlign": "left",
+            "textDecoration": "none",
+            "textOverflow": "ellipsis",
+            "lineHeight": "29px",
+            "letterSpacing": "0px",
+            "fontSize": "30px"
+          },
+          "text": "活动规则很多字活动规则很多字活动规则很多字活动规则很多字活动规则很多字活动规则很多字活动规则很多字活动规则很多字活动规则很多字活动规则很多字活动规则很多字活动规则很多字活动规则很多字活动规则很多字活动规则很多字",
+          "lines": 7,
+          "className": "article"
+        },
+        "rect": {
+          "x": 94,
+          "y": 192,
+          "width": 559,
+          "height": 203
+        },
+        "classNames": [{
+          "name": "活动规则",
+          "id": "478_20"
+        }, {
+          "name": "内容",
+          "id": "478_13"
+        }],
+        "selfId": "layerId-6_0"
+      }, {
+        "componentName": "Text",
+        "id": "e4f98e74-a247-11eb-bd7f-b38b65e80e0b",
+        "props": {
+          "style": {
+            "WebkitBoxOrient": "vertical",
+            "display": "-webkit-inline-box",
+            "WebkitLineClamp": 7,
+            "position": "relative",
+            "marginTop": "30px",
+            "width": "559px",
+            "height": "203px",
+            "overflow": "hidden",
+            "textAlign": "left",
+            "textDecoration": "none",
+            "textOverflow": "ellipsis",
+            "lineHeight": "29px",
+            "letterSpacing": "0px",
+            "fontSize": "30px"
+          },
+          "text": "活动规则很多字活动规则很多字活动规则很多字活动规则很多字活动规则很多字活动规则很多字活动规则很多字活动规则很多字活动规则很多字活动规则很多字活动规则很多字活动规则很多字活动规则很多字活动规则很多字活动规则很多字",
+          "lines": 7,
+          "className": "article-1"
+        },
+        "rect": {
+          "x": 94,
+          "y": 425,
+          "width": 559,
+          "height": 203
+        },
+        "classNames": [{
+          "name": "活动规则",
+          "id": "478_20"
+        }, {
+          "name": "内容",
+          "id": "478_13"
+        }],
+        "selfId": "layerId-6_1"
+      }, {
+        "componentName": "Text",
+        "id": "e4f98e73-a247-11eb-bd7f-b38b65e80e0b",
+        "props": {
+          "style": {
+            "WebkitBoxOrient": "vertical",
+            "display": "-webkit-inline-box",
+            "WebkitLineClamp": 3,
+            "position": "relative",
+            "marginTop": "30px",
+            "width": "558px",
+            "height": "63px",
+            "overflow": "hidden",
+            "textAlign": "left",
+            "textDecoration": "none",
+            "textOverflow": "ellipsis",
+            "lineHeight": "21px",
+            "letterSpacing": "0px",
+            "fontSize": "30px"
+          },
+          "text": "活动规则很多字活动规则很多字活动规则很多字活动规则很多字活动规则很多字",
+          "lines": 3,
+          "className": "summary"
+        },
+        "rect": {
+          "x": 95,
+          "y": 658,
+          "width": 558,
+          "height": 63
+        },
+        "classNames": [{
+          "name": "活动规则",
+          "id": "478_20"
+        }, {
+          "name": "内容",
+          "id": "478_13"
+        }],
+        "selfId": "layerId-6_2"
       }]
     }],
-    "loopArgs": ["item", "index"],
-    "loop": "{{this.state.data}}"
-  }],
-  "fileName": "index",
-  "methods": {
-    "isReadCountShow": function isReadCountShow(readCount) {
-      return readCount > 300;
-    }
-  },
-  "lifeCycles": {
-    "_constructor": function constructor(props, context) {
-      console.log('super props');
-    },
-    "componentDidUpdate": (prevProps, prevState, snapshot) => {
-      
-    }
-  },
-  "dataSource": {
-    "list": [{
-      "id": "fetch_example",
-      "isInit": true,
-      "type": "fetch",
-      "options": {
-        "method": "GET",
-        "uri": "https://jsonplaceholder.typicode.com/todos/1",
-        "headers": {
-          "Content-Type": "json"
+    "smart": {
+      "layerProtocol": {
+        "module": {
+          "type": "smartModule",
+          "params": {
+            "moduleName": "card"
+          }
         }
-      },
-      "dataHandler": function dataHandler(data, error) {
-        console.log('fetch example: ', data, error)
-        return data;
       }
-    }, {
-      "id": "jsonp_example",
-      "isInit": true,
-      "type": "jsonp",
-      "options": {
-        "method": "GET",
-        "params": {},
-        "uri": "https://assets.airbnb.com/frontend/search_results.js",
-        "jsonpCallbackFunction": "search_results"
-      },
-      "dataHandler": function dataHandler(data, error) {
-        console.log('jsonp example: ', data, error)
-        return data;
-      }
-    }]
-  },
-  "state": {
-    "data": [{
-      "title": "小户型卫浴怎样才能装得高大上？",
-      "coverImage": "https://img.alicdn.com/tfs/TB1Txq6o7T2gK0jSZFkXXcIQFXa-684-684.png",
-      "readCount": 200,
-      "user": {
-        "userImage": "https://img.alicdn.com/tfs/TB1DWe6oYj1gK0jSZFOXXc7GpXa-60-60.png",
-        "userName": "时尚家居"
-      },
-      "url": "https://www.imgcook.com"
-    }, {
-      "title": "拥有超多功能的40平米简约小公寓了解一下",
-      "coverImage": "https://img.alicdn.com/tfs/TB1XRQTo7P2gK0jSZPxXXacQpXa-684-648.png",
-      "readCount": 500,
-      "user": {
-        "userImage": "https://img.alicdn.com/tfs/TB1DWe6oYj1gK0jSZFOXXc7GpXa-60-60.png",
-        "userName": "花花设计工作"
-      },
-      "url": "https://www.imgcook.com/docs"
-    }]
+    }
+  }],
+  "imgcook": {
+    "restore_id": "f5d91050-bebf-435e-b835-2874364e08cd"
   }
 }

@@ -1,134 +1,156 @@
-.box {
+.page {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  position: relative;
   align-items: flex-start;
-  height: 534px;
-  .content {
-    .bd {
-      display: flex;
-      position: relative;
-      align-items: flex-start;
-      flex-direction: row;
-      opacity: 1;
-      width: 342px;
-      height: 342px;
-      .layer {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 342px;
-        height: 342px;
-        overflow: hidden;
-      }
-      .bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 1;
-        width: 342px;
-        height: 342px;
-      }
-      .wrap {
-        box-sizing: border-box;
-        display: flex;
-        position: relative;
-        align-items: center;
-        flex-direction: row;
-        margin-top: 18px;
-        margin-left: 18px;
-        border-radius: 15px;
-        background-color: rgba(0, 0, 0, 0.4);
-        padding-right: 9px;
-        padding-left: 10px;
-        height: 30px;
-        .riverdinwei {
-          opacity: 1;
-          width: 14px;
-          height: 18px;
-        }
-        .distance {
-          margin-left: 4px;
-          height: 22px;
-          font-weight: 400;
-          font-size: 18px;
-          color: #ffffff;
-          line-height: 22px;
-          white-space: nowrap;
-        }
-      }
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 750px;
+  .card {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    .long-banner {
+      width: 750px;
+      height: 1334px;
     }
-    .main {
+  }
+  .card-1 {
+    display: flex;
+    position: absolute;
+    bottom: 48px;
+    align-items: flex-start;
+    align-self: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 659px;
+    height: 1237px;
+    overflow: hidden;
+    .group {
       display: flex;
+      position: absolute;
+      bottom: 12px;
+      left: 0;
       align-items: flex-start;
       flex-direction: row;
       justify-content: center;
-      background-color: #ffffff;
-      width: 342px;
-      height: 114px;
-      .title {
-        margin-top: 22px;
-        width: 300px;
-        height: 88px;
-        font-weight: 400;
-        font-size: 30px;
-        color: #333333;
-        line-height: 44px;
+      background-size: contain;
+      background-image: url(https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/df34cf90a24711ebb40d83c5f8e78746.png);
+      width: 659px;
+      height: 138px;
+      .view {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 45px;
+        background-color: #ffffff;
+        background-image: linear-gradient(
+          to top,
+          rgb(255, 87, 111),
+          rgb(236, 44, 86)
+        );
+        width: 195px;
+        height: 63px;
         overflow: hidden;
-        text-overflow: ellipsis;
+        .icon {
+          margin-right: 39px;
+          width: 17px;
+          height: 19px;
+          overflow: hidden;
+        }
+        .title {
+          margin-top: -1px;
+          margin-right: 37px;
+          text-align: center;
+          text-decoration: none;
+          line-height: 30px;
+          letter-spacing: 0.72916674613953px;
+          white-space: nowrap;
+          color: #ffffff;
+          font-size: 30px;
+        }
+        .icon-1 {
+          width: 17px;
+          height: 19px;
+          overflow: hidden;
+        }
       }
     }
-    .ft {
-      box-sizing: border-box;
+    .primary {
       display: flex;
+      position: relative;
       align-items: center;
-      flex-direction: row;
-      justify-content: space-between;
-      border-bottom-left-radius: 12px;
-      border-bottom-right-radius: 12px;
-      background-color: #ffffff;
-      padding-right: 17px;
-      padding-left: 18px;
-      width: 342px;
-      height: 78px;
+      flex-direction: column;
+      margin-top: 14px;
+      background-color: #eb2b55;
+      width: 632px;
+      height: 1084px;
       overflow: hidden;
-      .block {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        height: 30px;
-        .xianjin {
-          width: 30px;
-          height: 30px;
-        }
-        .fashionHome {
-          margin-left: 6px;
-          height: 28px;
-          font-weight: 300;
-          font-size: 24px;
-          color: #666666;
-          line-height: 28px;
-          white-space: nowrap;
-        }
+      color: #ffffff;
+      .rule {
+        position: relative;
+        margin-top: 54px;
+        max-width: 620px;
+        height: 37px;
+        overflow: hidden;
+        text-align: center;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        line-height: 38px;
+        letter-spacing: 0px;
+        white-space: nowrap;
+        font-size: 38px;
       }
-      .group {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        height: 30px;
-        .favorite {
-          width: 22px;
-          height: 22px;
-        }
-        .num {
-          margin-left: 5px;
-          height: 26px;
-          font-weight: 400;
-          font-size: 22px;
-          color: #999999;
-          line-height: 26px;
-          white-space: nowrap;
-        }
+      .article {
+        webkit-box-orient: vertical;
+        display: -webkit-inline-box;
+        webkit-line-clamp: 7;
+        position: relative;
+        margin-top: 38px;
+        width: 559px;
+        height: 203px;
+        overflow: hidden;
+        text-align: left;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        line-height: 29px;
+        letter-spacing: 0px;
+        font-size: 30px;
+      }
+      .article-1 {
+        webkit-box-orient: vertical;
+        display: -webkit-inline-box;
+        webkit-line-clamp: 7;
+        position: relative;
+        margin-top: 30px;
+        width: 559px;
+        height: 203px;
+        overflow: hidden;
+        text-align: left;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        line-height: 29px;
+        letter-spacing: 0px;
+        font-size: 30px;
+      }
+      .summary {
+        webkit-box-orient: vertical;
+        display: -webkit-inline-box;
+        webkit-line-clamp: 3;
+        position: relative;
+        margin-top: 30px;
+        width: 558px;
+        height: 63px;
+        overflow: hidden;
+        text-align: left;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        line-height: 21px;
+        letter-spacing: 0px;
+        font-size: 30px;
       }
     }
   }

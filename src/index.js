@@ -284,25 +284,6 @@ module.exports = function (schema, option) {
     const type = schema.componentName.toLowerCase();
     const className = schema.props && schema.props.className;
     const classString = className ? ` class="${className}"` : '';
-
-    // if (className) {
-    //   styles.push(`
-    //     .${className} {
-    //       ${parseStyle(schema.props.style)}
-    //     }
-    //   `);
-    //   styles4vw.push(`
-    //     .${className} {
-    //       ${parseStyle(schema.props.style, { toVW: true })}
-    //     }
-    //   `);
-    //   styles4rem.push(`
-    //     .${className} {
-    //       ${parseStyle(schema.props.style, { toREM: true })}
-    //     }
-    //   `);
-    // }
-
     let xml;
     let props = '';
 
@@ -372,7 +353,7 @@ module.exports = function (schema, option) {
       });
     } else {
       const type = schema.componentName.toLowerCase();
-
+      console.log(type);
       if (['page', 'block', 'component'].indexOf(type) !== -1) {
         // 容器组件处理: state/method/dataSource/lifeCycle/render
         const init = [];
@@ -421,7 +402,7 @@ module.exports = function (schema, option) {
             }
           });
         }
-        template.push(generateRender(schema));
+        result += generateRender(schema);
       } else {
         result += generateRender(schema);
       }
@@ -436,7 +417,8 @@ module.exports = function (schema, option) {
   }
 
   // start parse schema
-  transform(schema);
+  var temString = transform(schema);
+  console.log(temString);
   datas.push(`constants: ${toString(constants)}`);
 
   const prettierOpt = {
@@ -444,7 +426,6 @@ module.exports = function (schema, option) {
     printWidth: 80,
     singleQuote: true
   };
-
   return {
     panelDisplay: [
       {
@@ -452,7 +433,7 @@ module.exports = function (schema, option) {
         panelValue: prettier.format(
           `
           <template>
-              ${template.join('\n')}
+              ${temString}
           </template>
           <script>
             ${imports.join('\n')}
@@ -468,7 +449,7 @@ module.exports = function (schema, option) {
               ${lifeCycles.join(',\n')}
             }
           </script>
-          <style src="./index.scss" />
+          <style lang="scss" src="./index.scss" />
         `,
           prettierOpt
         ),
