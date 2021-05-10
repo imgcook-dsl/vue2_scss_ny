@@ -292,7 +292,7 @@ module.exports = function (schema, option) {
   // generate render xml
   const generateRender = (schema) => {
     const type = schema.componentName.toLowerCase();
-    const className = schema.props && schema.props.className;
+    const className = schema.props &&  schema.props.className;
     const classString = className ? ` class="${className}"` : '';
     let xml;
     let props = '';
@@ -313,9 +313,9 @@ module.exports = function (schema, option) {
         let source = parseProps(schema.props.src, false);
         if (!source.match('"')) {
           source = `"${source}"`;
-          xml = `<img${classString}${props} :src=${source} /> `;
+          xml = `<div ${classString} ${props}><img :src=${source} /></div>`;
         } else {
-          xml = `<img${classString}${props} src=${source} /> `;
+          xml = `<div ${classString} ${props}><img :src=${source} /></div>`;
         }
         styles = `.${className}{${parseStyle(schema.props.style)}}`;
         break;
@@ -404,7 +404,7 @@ module.exports = function (schema, option) {
             init.push(`this.dataHandler()`);
           }
         }
-
+              
         if (schema.lifeCycles) {
           if (!schema.lifeCycles['_constructor']) {
             lifeCycles.push(`${lifeCycleMap['_constructor']}() { ${init.join('\n')}}`);
